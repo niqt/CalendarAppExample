@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B31010A72BEC0A9100A0EB35 /* EventStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31010A62BEC0A9100A0EB35 /* EventStoreManager.swift */; };
 		B345E0A42BEC017100F4A0A8 /* CalendarAppExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E0A32BEC017100F4A0A8 /* CalendarAppExampleApp.swift */; };
 		B345E0A62BEC017100F4A0A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E0A52BEC017100F4A0A8 /* ContentView.swift */; };
 		B345E0A82BEC017200F4A0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B345E0A72BEC017200F4A0A8 /* Assets.xcassets */; };
 		B345E0AB2BEC017200F4A0A8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B345E0AA2BEC017200F4A0A8 /* Preview Assets.xcassets */; };
+		B345E0B22BEC037500F4A0A8 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E0B12BEC037500F4A0A8 /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B31010A62BEC0A9100A0EB35 /* EventStoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventStoreManager.swift; sourceTree = "<group>"; };
+		B31010A82BEC0EE400A0EB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		B31010A92BED436C00A0EB35 /* CalendarAppExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarAppExample.entitlements; sourceTree = "<group>"; };
 		B345E0A02BEC017100F4A0A8 /* CalendarAppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarAppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B345E0A32BEC017100F4A0A8 /* CalendarAppExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppExampleApp.swift; sourceTree = "<group>"; };
 		B345E0A52BEC017100F4A0A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B345E0A72BEC017200F4A0A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B345E0AA2BEC017200F4A0A8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B345E0B12BEC037500F4A0A8 /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +57,12 @@
 		B345E0A22BEC017100F4A0A8 /* CalendarAppExample */ = {
 			isa = PBXGroup;
 			children = (
+				B31010A92BED436C00A0EB35 /* CalendarAppExample.entitlements */,
+				B31010A82BEC0EE400A0EB35 /* Info.plist */,
 				B345E0A32BEC017100F4A0A8 /* CalendarAppExampleApp.swift */,
 				B345E0A52BEC017100F4A0A8 /* ContentView.swift */,
+				B31010A62BEC0A9100A0EB35 /* EventStoreManager.swift */,
+				B345E0B12BEC037500F4A0A8 /* SwiftUIView.swift */,
 				B345E0A72BEC017200F4A0A8 /* Assets.xcassets */,
 				B345E0A92BEC017200F4A0A8 /* Preview Content */,
 			);
@@ -137,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B31010A72BEC0A9100A0EB35 /* EventStoreManager.swift in Sources */,
 				B345E0A62BEC017100F4A0A8 /* ContentView.swift in Sources */,
 				B345E0A42BEC017100F4A0A8 /* CalendarAppExampleApp.swift in Sources */,
+				B345E0B22BEC037500F4A0A8 /* SwiftUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +281,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CalendarAppExample/CalendarAppExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CalendarAppExample/Preview Content\"";
+				DEVELOPMENT_TEAM = AHGUK54A9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalendarAppExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,11 +312,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CalendarAppExample/CalendarAppExample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CalendarAppExample/Preview Content\"";
+				DEVELOPMENT_TEAM = AHGUK54A9X;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CalendarAppExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
