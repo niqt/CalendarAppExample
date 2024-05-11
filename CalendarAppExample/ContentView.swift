@@ -9,19 +9,45 @@ import SwiftUI
 
 struct ContentView: View {
     @State var eventsManager = EventStoreManager()
+    @State var isPresented = false
+    
     var body: some View {
-        VStack {
-            List(eventsManager.events, id:\.self) { event in
-                Text(event.title)
+        NavigationStack {
+            VStack {
+                List(eventsManager.events, id:\.self) { event in
+                    Text(event.title)
+                }
             }
-        }.task {
-            do {
-                try await eventsManager.setEventDate(date: Date())
-            } catch {
-                print("Error")
+            .padding()
+            .toolbar(content: {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("+") {
+                        isPresented = true
+                    }.font(.largeTitle)
+                }
+            })
+            .sheet(isPresented: $isPresented, content: {
+                EventView()
+            })
+        }.onAppear {
+            Task {
+                await loadEvents()
+            }
+        }.onChange(of: isPresented) {
+            if !isPresented {
+                Task {
+                    await loadEvents()
+                }
             }
         }
-        .padding()
+    }
+    
+    func loadEvents() async {
+        do {
+            try await eventsManager.setEventDate(date: Date())
+        } catch {
+            print("Error")
+        }
     }
 }
 

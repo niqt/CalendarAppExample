@@ -30,4 +30,18 @@ class EventStoreManager {
             self.events = fetchEvent(date: date)
         }
     }
+    
+    func addEvent(date: Date, title: String) {
+        let event = EKEvent(eventStore: self.eventStore)
+        event.calendar = eventStore.defaultCalendarForNewEvents
+        event.title = title
+        event.startDate = date
+        event.endDate =  Calendar.current.date(byAdding: .hour, value: 1, to: date)
+        
+        do {
+            try self.eventStore.save(event, span: .thisEvent, commit: true)
+        } catch {
+            print("ERRORE in salvataggio \(error)")
+        }
+    }
 }
