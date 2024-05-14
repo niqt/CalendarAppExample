@@ -16,7 +16,6 @@ struct EventView: View {
         VStack {
             TextField("Event title", text: $title)
             Button("Save") {
-                
                 eventsManager.addEvent(date: Date(), title: title)
                 dismiss()
             }

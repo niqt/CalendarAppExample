@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B31010A72BEC0A9100A0EB35 /* EventStoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31010A62BEC0A9100A0EB35 /* EventStoreManager.swift */; };
 		B31010AB2BEFBB8600A0EB35 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31010AA2BEFBB8600A0EB35 /* EventView.swift */; };
+		B31010AD2BF14F1B00A0EB35 /* EventEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B31010AC2BF14F1B00A0EB35 /* EventEditViewController.swift */; };
 		B345E0A42BEC017100F4A0A8 /* CalendarAppExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E0A32BEC017100F4A0A8 /* CalendarAppExampleApp.swift */; };
 		B345E0A62BEC017100F4A0A8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B345E0A52BEC017100F4A0A8 /* ContentView.swift */; };
 		B345E0A82BEC017200F4A0A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B345E0A72BEC017200F4A0A8 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		B31010A82BEC0EE400A0EB35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B31010A92BED436C00A0EB35 /* CalendarAppExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalendarAppExample.entitlements; sourceTree = "<group>"; };
 		B31010AA2BEFBB8600A0EB35 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		B31010AC2BF14F1B00A0EB35 /* EventEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditViewController.swift; sourceTree = "<group>"; };
 		B345E0A02BEC017100F4A0A8 /* CalendarAppExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarAppExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B345E0A32BEC017100F4A0A8 /* CalendarAppExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarAppExampleApp.swift; sourceTree = "<group>"; };
 		B345E0A52BEC017100F4A0A8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				B31010A82BEC0EE400A0EB35 /* Info.plist */,
 				B345E0A32BEC017100F4A0A8 /* CalendarAppExampleApp.swift */,
 				B345E0A52BEC017100F4A0A8 /* ContentView.swift */,
+				B31010AC2BF14F1B00A0EB35 /* EventEditViewController.swift */,
 				B31010AA2BEFBB8600A0EB35 /* EventView.swift */,
 				B31010A62BEC0A9100A0EB35 /* EventStoreManager.swift */,
 				B345E0A72BEC017200F4A0A8 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B31010A72BEC0A9100A0EB35 /* EventStoreManager.swift in Sources */,
+				B31010AD2BF14F1B00A0EB35 /* EventEditViewController.swift in Sources */,
 				B345E0A62BEC017100F4A0A8 /* ContentView.swift in Sources */,
 				B345E0A42BEC017100F4A0A8 /* CalendarAppExampleApp.swift in Sources */,
 				B31010AB2BEFBB8600A0EB35 /* EventView.swift in Sources */,

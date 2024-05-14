@@ -27,7 +27,7 @@ struct ContentView: View {
                 }
             })
             .sheet(isPresented: $isPresented, content: {
-                EventView()
+                EventRepresentable()
             })
         }.onAppear {
             Task {

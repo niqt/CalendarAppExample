@@ -41,7 +41,14 @@ class EventStoreManager {
         do {
             try self.eventStore.save(event, span: .thisEvent, commit: true)
         } catch {
-            print("ERRORE in salvataggio \(error)")
+            print("Saving error \(error)")
+        }
+    }
+    
+    func calendars() {
+        let calendars = self.eventStore.calendars(for: .event)
+        for calendar in calendars {
+            print(calendar.title)
         }
     }
 }
